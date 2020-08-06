@@ -1,2 +1,6 @@
-resource "null_resource" "example" {
+resource "null_resource" "test" {
+  lifecycle = {
+    create_before_destroy=true
+  }
+  
 }
